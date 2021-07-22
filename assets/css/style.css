@@ -1,150 +1,117 @@
-/**
- * style.css
- */
 
-/**
- * Variables
- */
-:root {
-    --white: #ffffff;
-    --gray: #a2a2a2;
-    --pink: #e71969;
-    --pink-dark: #991e5f;
-    --orange: #f56306;
-    --orange-dark: #ff2400;
-    --black-op-85: rgba(0, 0, 0, 0.85);
+/* variables */
+:root{
+--white: #fff;
+--pink:#e71969;
+--orange:#f59506;
+--perpel:#991e5f;
+--bleusart:#6a5acd;
 }
 
-
-body {
+body{
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     margin: 0;
 }
-
-.container {
+.containeur{
     width: 60%;
     margin: auto;
 }
-
-.bold {
+.bold{
     font-weight: bold;
 }
 
-/**
- * Barre de navigation
- */
-nav {
-    /* La dernière valeur correspond à l'opacité de la couleur */
-    background-color: var(--black-op-85);
+/* barre de navigation */
+nav{
+    background-color: rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
-
-/* L'espace est similaire à "à l'intérieur" */
-nav .container {
+nav .containeur{
     display: flex;
-    justify-content: space-between; /* Horizontal */
-    align-items: center; /* Vertical */
+    justify-content: space-between; /*horizantale*/
+    align-items: center; /*verticale*/
     height: 65px;
 }
-
-nav .container a {
-    color: var(--white);
+nav .containeur a{
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight:bold;
 }
 
-nav .container ul {
+nav .containeur ul{
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 25px;
 }
-
-nav .container ul a {
+nav .containeur ul a{
     opacity: 0.5;
-    transition: opacity 500ms;
+    transition: opacity 0.4s;
 }
-
-nav .container ul a:hover {
+nav .containeur ul a:hover{
     opacity: 1;
-    transition: opacity 500ms;
+    transition: opacity 0.4s;
 }
-
-/**
- * Header
- */
-header {
-    background: linear-gradient(to right, var(--pink), var(--orange));
-    color: var(--white);
-    text-align: center;
-    padding: 215px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 6em;
-}
-
-header h2 {
-    font-size: 4em;
-    margin-top: 10px;
-    margin-bottom: 80px;
-}
-
-header .btn {
-    color: var(--white);
+/*header */
+ header{
+     background: linear-gradient(to right,var(--pink),var(--orange));
+     color: white;
+     text-align: center;
+     padding: 215px 0;
+ }
+ header h1{
+     margin: 0;
+     font-size: 6em;
+ }
+ header h2{
+     font-size: 4em;
+     margin-top: 15px;
+     
+ }
+ header .btn{
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: var(--pink-dark);
-    padding: 30px 45px; /* 1er : haut et bas, 2ème : droite et gauche */
+    background-color: #991e5f;
+    padding: 30px 45px;
     border-radius: 100px;
-    letter-spacing: 0.2em;
-    transition: background-color 500ms;
+    letter-spacing: 0.3em;
+ }
+ header .btn:hover{
+     background-color: #6a5acd;
+     transition: background-color 0.4s;
+ }
+
+ /* section */
+ main section{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 150px;
+     margin: 150px 0;
 }
+ main section h3{
+     font-size: 2.5em;
+     font-weight: lighter;
+     margin: 0;
+ }
+ main section img{
+     width: 20%;
+     border-radius: 100%;
+ }
 
-header .btn:hover {
-    background-color: var(--orange-dark);
-    transition: background-color 500ms;
-}
-
-/**
- * Sections
- */
-main section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 150px; /* Espacement entre les colonnes */
-    margin: 150px 0;
-}
-
-main section h3 {
-    font-size: 4em;
-    font-weight: lighter;
-    margin: 0;
-}
-
-main section img {
-    width: 40%;
-    border-radius: 100%;
-}
-
-/**
- * Footer
- */
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--gray);
-    border-top: 1px solid var(--gray);
-}
-
-
-
-
-
+ /*footer */ 
+ footer{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color:rgba(242,243,245,0.2);
+     
+     border-top: rgb(198, 199, 201) 1px solid ;
+ }
+ footer p {
+     color: slategrey;
+ }
